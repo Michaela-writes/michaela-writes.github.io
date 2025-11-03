@@ -1,4 +1,4 @@
-:root { --bg:##FADADD; --ink:#1f1b24; --accent:#7b5d8e; }
+:root { --bg:#FADADD; --ink:#1f1b24; --accent:#7b5d8e; }
 * { box-sizing: border-box; }
 body { margin:0; font: 18px/1.6 Georgia, "Times New Roman", serif; color:var(--ink); background:var(--bg); }
 header, main, footer { max-width: 900px; margin: 0 auto; padding: 24px; }
