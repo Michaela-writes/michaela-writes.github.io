@@ -161,3 +161,14 @@ input::placeholder{color:rgba(237,232,228,.65)}
   position:fixed; left:16px; top:16px; width:auto; height:auto;
   padding:.5em .8em; background:var(--bg-section); border:1px solid rgba(255,255,255,.4); border-radius:8px;
 }
+/* Hindra sidscroll i hero-sektionen */
+.hero {
+  overflow: hidden;
+}
+
+/* Gör så glöd-effekten håller sig inom sidans bredd */
+.hero-glow {
+  left: 0;
+  right: 0;
+}
+
