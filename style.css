@@ -15,7 +15,10 @@
 
 /* ============ Grund ============ */
 *{box-sizing:border-box}
-html,body{height:100%}
+html,body{height:100%
+  overflow-x: hidden;   /* hindrar horisontell scroll */
+  width: 100%;          /* låser bredden till 100 % */
+  }
 body{
   margin:0;
   background: radial-gradient(1200px 700px at 70% -10%, rgba(155,122,174,.15), transparent 60%),
