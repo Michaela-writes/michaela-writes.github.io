@@ -177,3 +177,18 @@ input::placeholder{color:rgba(237,232,228,.65)}
   right: 0;
 }
 
+/* Logga vänster, meny centrerad */
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centrerar menyn */
+  position: relative;
+}
+
+.brand {
+  position: absolute;
+  left: clamp(16px, 3vw, 40px); /* flyttar loggan till vänster med lite luft */
+  top: 50%;
+  transform: translateY(-50%); /* centrerar loggan vertikalt i headern */
+}
+
