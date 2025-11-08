@@ -192,3 +192,33 @@ input::placeholder{color:rgba(237,232,228,.65)}
   transform: translateY(-50%); /* centrerar loggan vertikalt i headern */
 }
 
+/* HEADER: full bredd så loggan kan ligga längst till vänster på sidan */
+.site-header .container{
+  max-width: none;   /* ta bort 1100px-gränsen just i headern */
+  width: 100%;
+  margin: 0;         /* inte centrerad container i headern */
+}
+
+/* Menyraden centreras, men vi gör plats för en absolut-positionerad logga */
+.nav-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* menyn i mitten */
+  position: relative;
+  min-height: 64px;          /* ge höjd så loggan inte klipps */
+}
+
+/* Loggan fast till vänster, med lite luft från kanten */
+.brand{
+  position: absolute;
+  left: clamp(16px, 3vw, 40px);
+  top: 50%;
+  transform: translateY(-50%);  /* centrerar loggan vertikalt i headern */
+}
+
+/* Loggans storlek (justera höjd efter smak) */
+.brand .logo{
+  height: 36px;      /* testa 32–44px om du vill */
+  width: auto;
+  display: block;
+
