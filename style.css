@@ -224,7 +224,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
   /* Justera loggans storlek */
 .brand .logo {
-  height: clamp(44px, 6vw, 68px); /* minsta, responsiva och största höjd */
+  height: clamp(52px, 7vw, 80px); /* minsta, responsiva och största höjd */
   width: auto;
   display: block;
 }
