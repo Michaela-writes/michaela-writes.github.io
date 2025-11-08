@@ -15,7 +15,7 @@
 
 /* ============ Grund ============ */
 *{box-sizing:border-box}
-html,body{height:100%
+html,body{height:100%;
   overflow-x: hidden;   /* hindrar horisontell scroll */
   width: 100%;          /* låser bredden till 100 % */
   }
@@ -84,6 +84,14 @@ strong{color:var(--soft)}
 .site-nav ul{display:flex; gap:10px; list-style:none; padding:0; margin:0}
 .site-nav a{padding:.5em .8em; border-radius:10px}
 .site-nav .btn{padding:.55em 1em}
+/* Logo i menyraden */
+.brand { display:flex; align-items:center; gap:.6em; }
+.brand .logo{
+  height:clamp(34px,5.2vw,48px); /* justera vid behov */
+  width:auto;
+  display:block;
+}
+.brand-mark{ display:none; } /* dölj stjärnan om den finns kvar */
 
 .nav-toggle{
   display:inline-block; background:none; border:1px solid rgba(255,255,255,.25);
