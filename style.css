@@ -229,4 +229,13 @@ input::placeholder{color:rgba(237,232,228,.65)}
   display: block;
 }
 
+/* Tvinga loggans storlek */
+.site-header .logo{
+  height: 72px !important;  /* prova 60–90px tills det känns rätt */
+  width: auto !important;
+  display: block;
+}
+
+/* Se till att headern är tillräckligt hög så inget klipps */
+.nav-row{ min-height: 88px; }
 
