@@ -222,3 +222,11 @@ input::placeholder{color:rgba(237,232,228,.65)}
   width: auto;
   display: block;
 
+  /* Justera loggans storlek */
+.brand .logo {
+  height: clamp(44px, 6vw, 68px); /* minsta, responsiva och största höjd */
+  width: auto;
+  display: block;
+}
+
+
