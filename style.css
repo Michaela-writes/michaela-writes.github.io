@@ -78,16 +78,7 @@ strong{color:var(--soft)}
   backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(255,255,255,.1);
 }
-.nav-row{
-    display:flex; 
-    align-items:center; 
-    justify-content:space-between}
 
-.brand{
-  margin-right: auto;     /* trycker loggan till vänster */
-  display: flex;
-  align-items: center;
-}
 .brand{display:flex; align-items:center; gap:.6em; font-weight:600; color:var(--text)}
 .brand-mark{color:var(--gold)}
 .site-nav ul{display:flex; gap:10px; list-style:none; padding:0; margin:0}
