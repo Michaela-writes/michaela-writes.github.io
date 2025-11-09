@@ -78,8 +78,12 @@ strong{color:var(--soft)}
   backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(255,255,255,.1);
 }
-.nav-row{display:flex; align-items:center; justify-content:space-between}
-.brand {
+.nav-row{
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between}
+
+.brand{
   margin-right: auto;     /* trycker loggan till vänster */
   display: flex;
   align-items: center;
@@ -205,7 +209,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   align-items: center;
   justify-content: center;   /* menyn i mitten */
   position: relative;
-  min-height: 64px;          /* ge höjd så loggan inte klipps */
+  min-height: 100px;          /* ge höjd så loggan inte klipps */
 }
 
 /* Loggan fast till vänster, med lite luft från kanten */
