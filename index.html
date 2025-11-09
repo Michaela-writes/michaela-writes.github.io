@@ -14,9 +14,9 @@
   <!-- Topbar / Meny -->
   <header class="site-header" role="banner">
     <div class="container nav-row">
-      <a class="brand" href="#top" aria-label="Gå till startsidan">
-         <img src="logga4.png" alt="Michaela Wickberg – logotyp" class="logo">
-      </a>
+      <a class="brand" href="#" onclick="window.scrollTo({top:0,left:0,behavior:'smooth'}); return false;">
+  <img src="logga4.png" alt="Michaela Wickberg – logotyp" class="logo">
+</a>
 
       <nav class="site-nav" role="navigation" aria-label="Huvudmeny">
         <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Meny</button>
@@ -198,18 +198,6 @@
       list.classList.toggle('open');
     });
   
-  // ...din befintliga JS...
-
-  // Scrolla HELT till toppen när man klickar på loggan
-  const brandLink = document.querySelector('.brand');
-  if (brandLink) {
-    brandLink.addEventListener('click', (e) => {
-      e.preventDefault(); // stoppa hopplänkens standardbeteende
-      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
-      // (valfritt) rensa hash i URL om du tidigare klickat på en #länk:
-      // history.replaceState(null, '', ' ');
-    });
-  }
 </script>
 
   
