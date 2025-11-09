@@ -198,5 +198,21 @@
       list.classList.toggle('open');
     });
   </script>
+<script>
+  // ...din befintliga JS...
+
+  // Scrolla HELT till toppen när man klickar på loggan
+  const brandLink = document.querySelector('.brand');
+  if (brandLink) {
+    brandLink.addEventListener('click', (e) => {
+      e.preventDefault(); // stoppa hopplänkens standardbeteende
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+      // (valfritt) rensa hash i URL om du tidigare klickat på en #länk:
+      // history.replaceState(null, '', ' ');
+    });
+  }
+</script>
+
+  
 </body>
 </html>
