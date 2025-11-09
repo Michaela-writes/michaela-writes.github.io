@@ -73,17 +73,49 @@ strong{color:var(--soft)}
 
 /* Header / Nav */
 .site-header{
-  position:sticky; top:0; z-index:10;
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: rgba(27,26,30,.7);
   backdrop-filter: blur(8px);
   border-bottom:1px solid rgba(255,255,255,.1);
 }
 
-.brand{display:flex; align-items:center; gap:.6em; font-weight:600; color:var(--text)}
-.brand-mark{color:var(--gold)}
-.site-nav ul{display:flex; gap:10px; list-style:none; padding:0; margin:0}
-.site-nav a{padding:.5em .8em; border-radius:10px}
-.site-nav .btn{padding:.55em 1em}
+/* Låt headern använda full bredd + lite sidopadding */
+.site-header .container{
+  max-width: none;
+  width: 100%;
+  margin: 0;
+  padding: 0 clamp(16px, 3vw, 40px);
+}
+
+/* Menyrad: centrerad meny, plats för absolut logga */
+.nav-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* menyn i mitten */
+  position: relative;
+  min-height: 88px;          /* höjd så loggan inte klipps */
+}
+
+/* Loggan låst till vänster, vertikalt centrerad i headern */
+.brand{
+  position: absolute;
+  left: clamp(16px, 3vw, 40px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Loggans storlek (justera här) */
+.brand .logo{
+  height: 80px;      /* ändra till 60–90px efter smak */
+  width: auto;
+  display: block;
+}
+
+/* Menyn – en rad på desktop och lite tajtare padding */
+.site-nav ul{ display:flex; gap:16px; list-style:none; padding:0; margin:0; }
+.site-nav a{ padding:.45em .7em; border-radius:10px; }
 
 .nav-toggle{
   display:inline-block; background:none; border:1px solid rgba(255,255,255,.25);
@@ -96,6 +128,9 @@ strong{color:var(--soft)}
   .nav-toggle{display:none}
   #nav-list{display:flex}
 }
+
+/* (Slut på Header / Nav) */
+
 
 /* Hero */
 .hero{
