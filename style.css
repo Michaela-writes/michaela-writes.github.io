@@ -218,7 +218,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* Loggans storlek (justera höjd efter smak) */
 .brand .logo{
-  height: 36px;      /* testa 32–44px om du vill */
+  height: 80px;      /* testa 32–44px om du vill */
   width: auto;
   display: block;
 
