@@ -13,6 +13,8 @@
   --max:1100px;
 }
 
+html { scroll-behavior: smooth; }
+
 /* ============ Grund ============ */
 *{box-sizing:border-box}
 html,body{height:100%;
