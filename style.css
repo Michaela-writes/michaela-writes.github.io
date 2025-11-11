@@ -27,7 +27,7 @@ body{
               linear-gradient(0deg, rgba(140,67,82,.12), rgba(140,67,82,.0) 40%),
               var(--bg-dark);
   color:var(--text);
-  font: 17px/1.7 "Garamond", Georgia, serif;
+  font: 17px/1.7 Garamond, Georgia, serif;
   letter-spacing:.2px;
 }
 
