@@ -29,7 +29,7 @@ body{
               linear-gradient(0deg, rgba(140,67,82,.12), rgba(140,67,82,.0) 40%),
               var(--bg-dark);
   color:var(--text);
-  fontfamily: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   font-weight: 600; /* 500–600 brukar bli snyggt i meny */
   letter-spacing:.2px;  /* lite luft mellan bokstäverna */
   line-height: 1.2;
@@ -261,15 +261,8 @@ input::placeholder{color:rgba(237,232,228,.65)}
   transform: translateY(-50%);  /* centrerar loggan vertikalt i headern */
 }
 
-/* Loggans storlek (justera höjd efter smak) */
 .brand .logo{
-  height: 80px;      /* testa 32–44px om du vill */
-  width: auto;
-  display: block;
-
-  /* Justera loggans storlek */
-.brand .logo {
-  height: clamp(52px, 7vw, 80px); /* minsta, responsiva och största höjd */
+  height: clamp(52px, 7vw, 80px); /* ändra efter smak */
   width: auto;
   display: block;
 }
