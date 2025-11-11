@@ -284,7 +284,8 @@ input::placeholder{color:rgba(237,232,228,.65)}
 /* Se till att headern är tillräckligt hög så inget klipps */
 .nav-row{ min-height: 88px; }
 
-  /* ===== Instagram-marquee (autoscrollande rad) ===== */
+ /* ===== Instagram-marquee (autoscroll) – hardened ===== */
+#instagram .section-head + .ig-marquee,
 .ig-marquee{
   overflow: hidden;
   border:1px solid rgba(255,255,255,.12);
@@ -295,22 +296,24 @@ input::placeholder{color:rgba(237,232,228,.65)}
 }
 
 .ig-track{
-  display: flex;
+  display: inline-flex;           /* viktig: låt bandet bli så brett det vill */
   align-items: center;
   gap: 12px;
   padding: 12px;
-  /* Nyckeln till oändlig loop */
+  margin: 0;                      /* ta bort ul-default */
+  list-style: none;               /* ta bort bullets */
+  will-change: transform;         /* mjukare animation */
   animation: ig-scroll 40s linear infinite;
 }
 
-/* Pausa när man hovrar – trevligt! */
 .ig-marquee:hover .ig-track{
-  animation-play-state: paused;
+  animation-play-state: paused;   /* pausa på hover */
 }
 
 .ig-card{
-  flex: 0 0 calc(25% - 9px); /* 4 bilder syns samtidigt */
-  aspect-ratio: 1 / 1;       /* kvadratisk */
+  flex: 0 0 auto;                 /* ingen krymp/expand */
+  width: calc(25% - 9px);         /* 4 synliga */
+  aspect-ratio: 1 / 1;
   border-radius: 12px;
   overflow: hidden;
   border:1px solid rgba(255,255,255,.12);
@@ -324,27 +327,23 @@ input::placeholder{color:rgba(237,232,228,.65)}
   display: block;
   transition: transform .3s ease;
 }
+.ig-card:hover img{ transform: scale(1.04); }
 
-.ig-card:hover img{
-  transform: scale(1.04);
-}
-
-/* Animation – flytta bandet halva längden (eftersom vi dubblat bildlistan) */
+/* Loop: vi har dubblat bildlistan, så -50% räcker */
 @keyframes ig-scroll{
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-/* Responsivitet: 3 bilder på surfplatta, 2 på mobil */
+/* Responsivt: 3 på tablet, 2 på mobil */
 @media (max-width: 999px){
-  .ig-card{ flex: 0 0 calc(33.333% - 8px); }
+  .ig-card{ width: calc(33.333% - 8px); }
 }
 @media (max-width: 639px){
-  .ig-card{ flex: 0 0 calc(50% - 6px); }
+  .ig-card{ width: calc(50% - 6px); }
 }
 
-/* Respekt för användare som vill minska animationer */
+/* Respekt för reducerade animationer */
 @media (prefers-reduced-motion: reduce){
   .ig-track{ animation: none; }
 }
-
