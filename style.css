@@ -284,3 +284,67 @@ input::placeholder{color:rgba(237,232,228,.65)}
 /* Se till att headern är tillräckligt hög så inget klipps */
 .nav-row{ min-height: 88px; }
 
+  /* ===== Instagram-marquee (autoscrollande rad) ===== */
+.ig-marquee{
+  overflow: hidden;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.ig-track{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  /* Nyckeln till oändlig loop */
+  animation: ig-scroll 40s linear infinite;
+}
+
+/* Pausa när man hovrar – trevligt! */
+.ig-marquee:hover .ig-track{
+  animation-play-state: paused;
+}
+
+.ig-card{
+  flex: 0 0 calc(25% - 9px); /* 4 bilder syns samtidigt */
+  aspect-ratio: 1 / 1;       /* kvadratisk */
+  border-radius: 12px;
+  overflow: hidden;
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.04);
+}
+
+.ig-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+
+.ig-card:hover img{
+  transform: scale(1.04);
+}
+
+/* Animation – flytta bandet halva längden (eftersom vi dubblat bildlistan) */
+@keyframes ig-scroll{
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Responsivitet: 3 bilder på surfplatta, 2 på mobil */
+@media (max-width: 999px){
+  .ig-card{ flex: 0 0 calc(33.333% - 8px); }
+}
+@media (max-width: 639px){
+  .ig-card{ flex: 0 0 calc(50% - 6px); }
+}
+
+/* Respekt för användare som vill minska animationer */
+@media (prefers-reduced-motion: reduce){
+  .ig-track{ animation: none; }
+}
+
