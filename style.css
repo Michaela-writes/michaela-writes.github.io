@@ -296,7 +296,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   list-style: none;         /* inga bullets */
   white-space: nowrap;      /* extra säkerhet */
   will-change: transform;
-  animation: ig-scroll 30s linear infinite;
+  animation: ig-scroll 20s linear infinite;
 }
 
 .ig-marquee:hover .ig-track{ animation-play-state: paused; }
