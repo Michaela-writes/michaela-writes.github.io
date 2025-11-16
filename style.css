@@ -336,9 +336,9 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* ===== Sektionfärger ===== */
 
-/* Ljus rosa – "Cotton Rose" */
+/* Ljus rosa – "Soft blush" */
 .section:nth-of-type(1) {
-  background: #ECBABC;
+  background: #F3E2DDC;
   color: #000;
 }
 
