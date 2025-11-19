@@ -349,9 +349,10 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1A0205;
 }
 
-/* Böcker – lite djupare rosa */
+/* Böcker */
 #bocker{
-  background: #D496A7;      /* Old Rose */
+  /*background: #D496A7;*/      /* Old Rose */
+  background: #FFFFFF; 
   color: #1A0205;
 }
 
