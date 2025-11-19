@@ -391,3 +391,8 @@ input::placeholder{color:rgba(237,232,228,.65)}
   background: #FFFFFF;
   color: #1B1A1E;   /* mörk text för bra läsbarhet */
 }
+
+#intro {
+  text-align: center;
+}
+
