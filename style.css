@@ -367,12 +367,6 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #FFF;
 }
 
-/* Om du har fler sektioner – fortsätt cykeln */
-.section:nth-of-type(5) { background: #ECBABC; color: #000; }
-.section:nth-of-type(6) { background: #D496A7; color: #000; }
-.section:nth-of-type(7) { background: #773344; color: #FFF; }
-.section:nth-of-type(8) { background: #000000; color: #FFF; }
-
 /* ===== Sektionfärger i din palett ===== */
 
 /* Om mig – mjukast, personlig */
