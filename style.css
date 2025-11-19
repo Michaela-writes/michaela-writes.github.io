@@ -418,3 +418,13 @@ input::placeholder{color:rgba(237,232,228,.65)}
 .hero-glow {
   display: none !important;
 }
+
+.hero-content {
+  position: absolute;
+  text-align: center;
+  color: white;               /* ändra om bilden kräver mörk text */
+  padding: 20px;
+  max-width: 700px;
+  z-index: 5;
+}
+
