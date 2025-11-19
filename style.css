@@ -349,6 +349,12 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1A0205;
 }
 
+/* Intro */
+#intro{
+  background: #FFFFFF;     /* White */
+  color: #1A0205;
+}
+
 /* Böcker */
 #bocker{
   background: #D496A7;     /* Old Rose */
