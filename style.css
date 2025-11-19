@@ -351,13 +351,13 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* Om mig – mjukast, personlig */
 #om{
-  background: #F3E2DD;      /* Cotton Rose-ton */
+  background: #D496A7;      /* Old Rose */
   color: #1A0205;
 }
 
 /* Böcker */
 #bocker{
-  background: #D496A7;      /* Old Rose */
+  #F3E2DD;      /* Cotton Rose-ton */
   color: #1A0205;
 }
 
