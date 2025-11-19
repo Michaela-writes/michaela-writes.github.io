@@ -396,3 +396,25 @@ input::placeholder{color:rgba(237,232,228,.65)}
   text-align: center;
 }
 
+.hero {
+  position: relative;
+  padding: 0;                 /* ingen luft runt */
+  height: 60vh;               /* justera höjden – 60–80vh brukar vara snyggt */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* fyller hela headern snyggt */
+  object-position: center;    /* centrera motivet */
+  display: block;
+}
+
+/* Ta bort glödet helt */
+.hero-glow {
+  display: none !important;
+}
