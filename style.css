@@ -343,21 +343,21 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* ===== Sektionfärger i din palett ===== */
 
-/* Om mig – mjukast, personlig */
-#om{
-  background: #F3E2DD;      /* Cotton Rose */
-  color: #1A0205;
+/* Intro – vit sektion under hero */
+#intro{
+  background: #FFFFFF;
+  color: #1B1A1E;
 }
 
-/* Intro */
-#intro{
-  background: #;     /* White */
+/* Om mig – mjukast, personlig */
+#om{
+  background: #F3E2DD;      /* Cotton Rose-ton */
   color: #1A0205;
 }
 
 /* Böcker */
 #bocker{
-  background: #D496A7;     /* Old Rose */
+  background: #D496A7;      /* Old Rose */
   color: #1A0205;
 }
 
@@ -382,14 +382,12 @@ input::placeholder{color:rgba(237,232,228,.65)}
 /* Kontakt – vinröd, djup avslutning */
 #kontakt{
   background: #773344;      /* Wine Rose */
+  color: #FBEFF0;
+}
 
-  /* Vit sektion – ren och luftig */
+/* Vit sektion – generell klass om du vill använda white på fler sektioner */
 .section.white,
 .white {
   background: #FFFFFF;
   color: #1B1A1E;   /* mörk text för bra läsbarhet */
 }
-
-  color: #FBEFF0;
-}
-
