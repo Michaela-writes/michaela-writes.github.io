@@ -62,8 +62,15 @@ strong{color:var(--soft)}
   .grid-2{grid-template-columns:1fr 1fr}
 }
 
-.section{position:relative; padding: clamp(36px,6vw,80px) 0}
-.section.alt{background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0) 30%), var(--bg-section)}
+.section{
+  position:relative;
+  padding: clamp(36px,6vw,80px) 0;
+  background: transparent;   /* vi nollar bakgrund här */
+}
+
+.section.alt{
+  background: transparent;   /* ingen egen bakgrund längre */
+}
 .section-head{margin-bottom:18px}
 .muted{opacity:.75; font-size:.9em}
 .pill{display:inline-block; padding:.4em .8em; border:1px solid rgba(255,255,255,.14); border-radius:999px; margin:.2em .3em; background:rgba(200,167,160,.12)}
@@ -365,3 +372,42 @@ input::placeholder{color:rgba(237,232,228,.65)}
 .section:nth-of-type(6) { background: #D496A7; color: #000; }
 .section:nth-of-type(7) { background: #773344; color: #FFF; }
 .section:nth-of-type(8) { background: #000000; color: #FFF; }
+
+/* ===== Sektionfärger i din palett ===== */
+
+/* Om mig – mjukast, personlig */
+#om{
+  background: #ECBABC;      /* Cotton Rose */
+  color: #1A0205;
+}
+
+/* Böcker – lite djupare rosa */
+#bocker{
+  background: #D496A7;      /* Old Rose */
+  color: #1A0205;
+}
+
+/* Världen & karaktärer – mörkast, dramatisk */
+#varld{
+  background: #000000;      /* Black */
+  color: #FBEFF0;           /* ljus text */
+}
+
+/* Blogg / utdrag – ljus igen, lättläst */
+#blogg{
+  background: #ECBABC;      /* Cotton Rose */
+  color: #1A0205;
+}
+
+/* Instagram – mellanrosa, lite pop */
+#instagram{
+  background: #D496A7;      /* Old Rose */
+  color: #1A0205;
+}
+
+/* Kontakt – vinröd, djup avslutning */
+#kontakt{
+  background: #773344;      /* Wine Rose */
+  color: #FBEFF0;
+}
+
