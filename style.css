@@ -345,7 +345,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* Intro – vit sektion under hero */
 #intro{
-  background: #FFFFFF;
+  background: #FFFFFF;      /* White */
   color: #1B1A1E;
 }
 
@@ -375,7 +375,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 /* Instagram – mellanrosa, lite pop */
 #instagram{
-  background: #D496A7;      /* Old Rose */
+  background: #FFFFFF;      /* White */
   color: #1A0205;
 }
 
