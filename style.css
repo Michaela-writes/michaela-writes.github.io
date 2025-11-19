@@ -402,6 +402,14 @@ input::placeholder{color:rgba(237,232,228,.65)}
 /* Kontakt – vinröd, djup avslutning */
 #kontakt{
   background: #773344;      /* Wine Rose */
+
+  /* Vit sektion – ren och luftig */
+.section.white,
+.white {
+  background: #FFFFFF;
+  color: #1B1A1E;   /* mörk text för bra läsbarhet */
+}
+
   color: #FBEFF0;
 }
 
