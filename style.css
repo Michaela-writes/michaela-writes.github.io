@@ -349,15 +349,15 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1B1A1E;
 }
 
-/* Om mig – mjukast, personlig */
+/* Om mig – nu mörkare rosa (Old Rose) */
 #om{
   background: #D496A7;      /* Old Rose */
   color: #1A0205;
 }
 
-/* Böcker */
+/* Böcker – nu ljusare (Cotton Rose) */
 #bocker{
-  #F3E2DD;      /* Cotton Rose-ton */
+  background: #F3E2DD;      /* Cotton Rose */
   color: #1A0205;
 }
 
