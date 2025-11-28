@@ -348,6 +348,30 @@ input::placeholder{color:rgba(237,232,228,.65)}
   padding: 0;
 }
 
+.name-heading {
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 600;
+}
+
+.name-underline {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 8px;   /* lite luft mellan text och linjen */
+  z-index: 1;
+}
+
+.name-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;          /* flytta upp/ner linjen vid behov */
+  height: 22px;          /* hur "hög" bilden får vara */
+  background: url('Untitled-1.png') no-repeat center bottom;
+  background-size: contain;   /* skala så den passar under texten */
+  z-index: -1;                /* hamnar bakom texten */
+}
+
 
 /* ===== Sektionfärger i din palett ===== */
 
