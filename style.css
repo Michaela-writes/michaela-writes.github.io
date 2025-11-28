@@ -349,10 +349,10 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1B1A1E;
 }
 
-/* Om mig – nu mörkare rosa (Old Rose) */
+/* Om mig – nu vinröd */
 #om{
-  background: #D496A7;      /* Old Rose */
-  color: #1A0205;
+  background: #773344;      /* Wine Rose */
+  color: #FBEFF0;
 }
 
 /* Böcker – nu ljusare (Cotton Rose) */
@@ -379,10 +379,10 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1A0205;
 }
 
-/* Kontakt – vinröd, djup avslutning */
+/* Kontakt – nu mjuk rosa */
 #kontakt{
-  background: #773344;      /* Wine Rose */
-  color: #FBEFF0;
+  background: #F3E2DD;      /* Cotton Rose */
+  color: #1A0205;
 }
 
 /* Vit sektion – generell klass om du vill använda white på fler sektioner */
