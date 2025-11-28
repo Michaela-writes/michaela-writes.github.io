@@ -365,7 +365,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -4px;          /* flytta upp/ner linjen vid behov */
+  bottom: -2px;          /* flytta upp/ner linjen vid behov */
   height: 22px;          /* hur "hög" bilden får vara */
   background: url('Untitled-1.png') no-repeat center bottom;
   background-size: contain;   /* skala så den passar under texten */
