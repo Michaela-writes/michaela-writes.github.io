@@ -348,6 +348,16 @@ input::placeholder{color:rgba(237,232,228,.65)}
   padding: 0;
 }
 
+.author-photo{
+  width: 100%;
+  max-width: 420px;      /* så den inte blir FÖR stor */
+  border-radius: 18px;   /* mjukt rundade hörn */
+  display: block;
+  margin: 0 auto;        /* centrera i sin kolumn */
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+  object-fit: cover;
+}
+
 
 /* ===== Sektionfärger i din palett ===== */
 
