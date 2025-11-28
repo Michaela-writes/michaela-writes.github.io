@@ -356,7 +356,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 .name-underline {
   position: relative;
   display: inline-block;
-  padding-bottom: 8px;   /* lite luft mellan text och linjen */
+  padding-bottom: 6px;   /* lite luft mellan text och linjen */
   z-index: 1;
 }
 
