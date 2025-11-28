@@ -367,10 +367,10 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1B1A1E;
 }
 
-/* Om mig – nu vinröd */
-#om{
-  background: #773344;      /* Wine Rose */
-  color: #FBEFF0;
+/* Om mig – vit och ren */
+#om {
+  background: #FFFFFF;
+  color: #1A0205;   /* mörk text */
 }
 
 /* Böcker – nu ljusare (Cotton Rose) */
@@ -379,9 +379,9 @@ input::placeholder{color:rgba(237,232,228,.65)}
   color: #1A0205;
 }
 
-/* Världen & karaktärer – mörkast, dramatisk */
-#varld{
-  background: #000000;      /* Black */
+/* Världen & karaktärer – vinröd */
+#varld {
+  background: #773344;      /* Wine Rose */
   color: #FBEFF0;           /* ljus text */
 }
 
