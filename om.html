@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Om Michaela F. Wickberg</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="favicon16.png">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container nav-row">
+    <a class="brand" href="index.html">
+      <img src="favicon16.png" alt="Logo" class="logo">
+    </a>
+
+    <nav class="site-nav">
+      <ul id="nav-list">
+        <li><a href="index.html#om">Hem</a></li>
+        <li><a href="index.html#bocker">Böcker</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<section class="section white" id="om-more">
+  <div class="container">
+    <h1>Om Michaela</h1>
+
+    <p class="lead">
+      Här kan du skriva en längre presentation, din resa, din tro, ditt skrivande,
+      dina inspirationskällor och din väg som författare.
+    </p>
+
+    <p>
+      Du kan lägga in bilder, citat, en tidslinje, eller vad du vill.
+    </p>
+
+    <a href="index.html#om" class="btn btn-secondary">Tillbaka</a>
+  </div>
+</section>
+
+
+<footer class="site-footer">
+  <div class="container footer-row">
+    <p>© <span id="year"></span> Michaela F. Wickberg</p>
+    <a class="small-link" href="index.html#top">Hem ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
