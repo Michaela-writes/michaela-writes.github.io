@@ -596,7 +596,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   transform: rotateY(0deg);
 }
 
-.fun-fact-card h3 {
+.funfact-card h3 {
   margin-top: 18px;   /* mer luft över rubriken */
   font-size: 20px;
   margin-bottom: 8px;
