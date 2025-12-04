@@ -521,15 +521,13 @@ input::placeholder{color:rgba(237,232,228,.65)}
 
 .funfacts-grid {
   display: grid;
-  gap: 26px;
+  gap: 22px;
   grid-template-columns: 1fr;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
-@media (min-width: 860px) {
-  .funfacts-grid {
-    grid-template-columns: repeat(3, 1fr);
+@media (min-width: 860px){
+  .funfacts-grid { 
+    grid-template-columns: repeat(4,1fr); 
   }
 }
 
