@@ -597,7 +597,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 }
 
 .funfact-card h3 {
-  margin-top: 18px;   /* mer luft över rubriken */
+  margin-top: 12px;   /* mer luft över rubriken */
   font-size: 20px;
   margin-bottom: 8px;
 }
