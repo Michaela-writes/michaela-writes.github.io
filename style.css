@@ -499,3 +499,9 @@ input::placeholder{color:rgba(237,232,228,.65)}
     gap:28px;
   }
 }
+
+/* Tätt mellan sektioner på om-sidan */
+.section.compact {
+  padding: 30px 0;   /* eller 20px om du vill ha ännu mindre */
+}
+
