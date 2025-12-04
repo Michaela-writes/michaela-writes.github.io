@@ -460,3 +460,42 @@ input::placeholder{color:rgba(237,232,228,.65)}
   z-index: 5;
 }
 
+/* ===== Om-sidan / about-layout ===== */
+
+.about-section.white{
+  background:#FFFFFF;
+  color:#1A0205;
+}
+
+.about-photo-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.about-photo{
+  width:100%;
+  max-width:420px;
+  border-radius:18px;
+  box-shadow: var(--shadow);
+  object-fit:cover;
+}
+
+/* Textdelen */
+.about-text h1,
+.about-text h2{
+  margin-top:0;
+}
+
+.about-lead{
+  font-size:1.05em;
+  line-height:1.7;
+  margin-bottom:1.2em;
+}
+
+/* Lite extra luft på mobilen */
+@media (max-width: 859px){
+  .about-section .container{
+    gap:28px;
+  }
+}
