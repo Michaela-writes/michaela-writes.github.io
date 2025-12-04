@@ -559,3 +559,41 @@ input::placeholder{color:rgba(237,232,228,.65)}
   line-height: 1.5;
 }
 
+/* === Bildswap på hover === */
+.funfact-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.funfact-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transition: transform .7s ease;
+  border-radius: 12px;
+}
+
+/* Framsida */
+.img-front {
+  transform: rotateY(0deg);
+}
+
+/* Baksida */
+.img-back {
+  transform: rotateY(180deg);
+}
+
+/* Hover-effekt */
+.funfact-swap:hover .img-front {
+  transform: rotateY(-180deg);
+}
+.funfact-swap:hover .img-back {
+  transform: rotateY(0deg);
+}
