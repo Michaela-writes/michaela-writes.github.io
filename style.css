@@ -505,3 +505,57 @@ input::placeholder{color:rgba(237,232,228,.65)}
   padding: 20px 0;   /* eller 20px om du vill ha ännu mindre */
 }
 
+/* === Fun Facts – sektion === */
+.funfacts-section {
+  background: #F3E2DD;      /* Cotton Rose */
+  color: #1A0205;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.funfacts-title {
+  font-size: 32px;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+.funfacts-grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 860px) {
+  .funfacts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.funfact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+.funfact-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+.funfact-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.funfact-card p {
+  line-height: 1.5;
+}
+
