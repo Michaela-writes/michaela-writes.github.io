@@ -595,3 +595,9 @@ input::placeholder{color:rgba(237,232,228,.65)}
 .funfact-swap:hover .img-back {
   transform: rotateY(0deg);
 }
+
+.fun-fact-card h3 {
+  margin-top: 14px;   /* lägger luft mellan bilden och rubriken */
+  margin-bottom: 6px; /* lite luft innan brödtexten */
+}
+
