@@ -597,7 +597,9 @@ input::placeholder{color:rgba(237,232,228,.65)}
 }
 
 .fun-fact-card h3 {
-  margin-top: 14px;   /* lägger luft mellan bilden och rubriken */
-  margin-bottom: 6px; /* lite luft innan brödtexten */
+  margin-top: 18px;   /* mer luft över rubriken */
+  font-size: 20px;
+  margin-bottom: 8px;
 }
+
 
