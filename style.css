@@ -629,3 +629,17 @@ input::placeholder{color:rgba(237,232,228,.65)}
 .funfacts-section .funfact-card {
     padding: 24px;
 }
+
+/* === Funfacts – håll bilderna perfekt kvadratiska === */
+#om-more .funfact-img-wrap {
+  aspect-ratio: 1 / 1;   /* alltid kvadrat */
+  width: 100%;
+  overflow: hidden;
+}
+
+#om-more .funfact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* centrera & fyll utan att bli utdragen */
+  display: block;
+}
