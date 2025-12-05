@@ -602,4 +602,8 @@ input::placeholder{color:rgba(237,232,228,.65)}
   margin-bottom: 8px;
 }
 
+/* ========== Endast för om.html (bredare sektioner) ========== */
+.about-page .container {
+    max-width: 1400px; /* öka från standard 1100px */
+}
 
