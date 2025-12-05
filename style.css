@@ -607,3 +607,16 @@ input::placeholder{color:rgba(237,232,228,.65)}
     max-width: 1400px; /* öka från standard 1100px */
 }
 
+/* ========== Endast Fun Facts på om.html ========== */
+.funfacts-section .container {
+    max-width: 1400px; /* öka bredden här */
+}
+
+.funfacts-section .funfact-grid {
+    grid-template-columns: repeat(4, 1fr); /* håll fyra kort på rad */
+    gap: 30px;
+}
+
+.funfacts-section .funfact-card {
+    padding: 24px;
+}
