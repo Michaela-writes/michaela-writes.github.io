@@ -59,6 +59,11 @@
   }
 }
 
+/* Gör Fun Facts bredare på om-sidan */
+.funfacts-section .container {
+  max-width: 1400px;   /* prova 1300–1500 om du vill finjustera */
+}
+
 .funfact-card {
   background: #ffffff;
   border-radius: 14px;
