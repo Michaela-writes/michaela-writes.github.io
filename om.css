@@ -1,0 +1,106 @@
+/* ===== Endast om.html ===== */
+
+/* Gör sektionerna på om-sidan vita och lugna */
+.about-section.white{
+  background:#FFFFFF;
+  color:#1A0205;
+}
+
+/* Bild + text-layout */
+.about-photo-wrap{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.about-photo{
+  width:100%;
+  max-width:420px;
+  border-radius:18px;
+  box-shadow: var(--shadow);
+  object-fit:cover;
+}
+
+.about-text h1,
+.about-text h2{
+  margin-top:0;
+}
+
+.about-lead{
+  font-size:1.05em;
+  line-height:1.7;
+  margin-bottom:1.2em;
+}
+
+/* Fun Facts – sektion */
+.funfacts-section {
+  background: #F3E2DD;      /* Cotton Rose */
+  color: #1A0205;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.funfacts-title {
+  font-size: 32px;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+/* Grid – 1 kolumn på mobil, 4 på desktop */
+.funfacts-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px){
+  .funfacts-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.funfact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+/* Håll bilderna kvadratiska */
+.funfact-img-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 12px;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.funfact-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transition: transform .7s ease;
+  border-radius: 12px;
+}
+
+/* Front/back för flippen */
+.img-front { transform: rotateY(0deg); }
+.img-back  { transform: rotateY(180deg); }
+
+.funfact-swap:hover .img-front { transform: rotateY(-180deg); }
+.funfact-swap:hover .img-back  { transform: rotateY(0deg); }
+
+.funfact-card h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.funfact-card p {
+  line-height: 1.5;
+}
