@@ -373,7 +373,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
 }
 
 
-/* ===== Sektionfärger i din palett ===== */
+/* =============================================================================================== Sektionfärger i din palett ===================================================================================== */
 
 /* Intro – vit sektion under hero */
 #intro{
@@ -460,7 +460,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   z-index: 5;
 }
 
-/* ===== Om-sidan / about-layout ===== */
+/* ===================================================================================== Om-sidan / about-layout =============================================================================================== */
 
 .about-section.white{
   background:#FFFFFF;
@@ -539,14 +539,6 @@ input::placeholder{color:rgba(237,232,228,.65)}
   text-align: left;
 }
 
-.funfact-img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 14px;
-}
-
 .funfact-card h3 {
   margin-top: 0;
   font-size: 20px;
@@ -557,17 +549,68 @@ input::placeholder{color:rgba(237,232,228,.65)}
   line-height: 1.5;
 }
 
-/* === Bildswap på hover === */
+.funfact-card h3 {
+  margin-top: 12px;   /* mer luft över rubriken */
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.about-page .container {
+    max-width: 1400px; /* öka från standard 1100px */
+}
+
+.funfacts-section .funfact-card {
+    padding: 24px;
+}
+
+/* === Fun Facts – sektion === */
+.funfacts-section {
+  background: #F3E2DD;      /* Cotton Rose */
+  color: #1A0205;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.funfacts-title {
+  font-size: 32px;
+  margin-bottom: 36px;
+  letter-spacing: 1px;
+}
+
+/* Grid – 1 kolumn på mobil, 4 på desktop */
+.funfacts-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 860px){
+  .funfacts-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Själva kortet */
+.funfact-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  text-align: left;
+}
+
+/* Bild-wrap – här låser vi kvadraten */
 .funfact-img-wrap {
   position: relative;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 1 / 1;   /* alltid kvadrat */
   border-radius: 12px;
   overflow: hidden;
   perspective: 1000px;
 }
 
-.funfact-img-wrap img {
+/* Båda bilderna ligger ovanpå varandra, fyller kvadraten */
+.funfact-img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -588,7 +631,7 @@ input::placeholder{color:rgba(237,232,228,.65)}
   transform: rotateY(180deg);
 }
 
-/* Hover-effekt */
+/* Hover-effekt: flippa bilden */
 .funfact-swap:hover .img-front {
   transform: rotateY(-180deg);
 }
@@ -596,50 +639,14 @@ input::placeholder{color:rgba(237,232,228,.65)}
   transform: rotateY(0deg);
 }
 
+/* Rubrik & text i korten */
 .funfact-card h3 {
-  margin-top: 12px;   /* mer luft över rubriken */
+  margin-top: 12px;
   font-size: 20px;
   margin-bottom: 8px;
 }
 
-/* ========== Endast för om.html (bredare sektioner) ========== */
-.about-page .container {
-    max-width: 1400px; /* öka från standard 1100px */
+.funfact-card p {
+  line-height: 1.5;
 }
 
-/* ========== Endast Fun Facts på om.html ========== */
-.funfacts-section .container {
-    max-width: 1400px; /* öka bredden här */
-}
-
-.funfacts-section .funfact-grid {
-    grid-template-columns: repeat(4, 1fr); /* håll fyra kort på rad */
-    gap: 30px;
-}
-
-/* ========== Behåll fyrkantiga bilder i Fun Facts ========== */
-.funfacts-section .funfact-card img {
-    width: 100%;
-    aspect-ratio: 1 / 1;       /* Gör bilden perfekt kvadratisk */
-    object-fit: cover;         /* Zoomar in lite om det behövs */
-    border-radius: 12px;       /* Samma rundning som korten */
-}
-
-
-.funfacts-section .funfact-card {
-    padding: 24px;
-}
-
-/* === Funfacts – håll bilderna perfekt kvadratiska === */
-#om-more .funfact-img-wrap {
-  aspect-ratio: 1 / 1;   /* alltid kvadrat */
-  width: 100%;
-  overflow: hidden;
-}
-
-#om-more .funfact-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* centrera & fyll utan att bli utdragen */
-  display: block;
-}
