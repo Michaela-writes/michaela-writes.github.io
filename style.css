@@ -617,6 +617,15 @@ input::placeholder{color:rgba(237,232,228,.65)}
     gap: 30px;
 }
 
+/* ========== Behåll fyrkantiga bilder i Fun Facts ========== */
+.funfacts-section .funfact-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;       /* Gör bilden perfekt kvadratisk */
+    object-fit: cover;         /* Zoomar in lite om det behövs */
+    border-radius: 12px;       /* Samma rundning som korten */
+}
+
+
 .funfacts-section .funfact-card {
     padding: 24px;
 }
